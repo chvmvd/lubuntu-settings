@@ -1,2 +1,2 @@
-# My settings of Lubuntu.
+# My Settings of Lubuntu.
 This is my settings of Lubuntu.
