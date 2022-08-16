@@ -16,8 +16,9 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=500000
+HISTTIMEFORMAT='%F %T '
+HISTFILESIZE=1000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -92,6 +93,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias off='synclient TouchpadOff=1' # タッチパッドの無効化
+alias on='synclient TouchpadOff=0' # タッチパッドの有効化
+alias barusu='shutdown -h now' # シャットダウン
+alias mkcd='source ~/.bashsettings/mkcd.sh'
+alias customconfig='source /home/w/.bashsettings/customconfig.sh' # キーマップをカスタマイズ
+alias resetconfig='source /home/w/.bashsettings/resetconfig.sh' # キーマップを元に戻す。
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,3 +123,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
