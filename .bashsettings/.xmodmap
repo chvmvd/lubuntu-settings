@@ -6,7 +6,7 @@ clear shift
 
 keycode 9 =
 keycode 37 =
-keycode 50 =
+keycode 50 = Zenkaku_Hankaku
 keycode 62 =
 keycode 64 = Alt_L NoSymbol Alt_L
 keycode 65 = Shift_R NoSymbol Shift_R
