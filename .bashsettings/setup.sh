@@ -17,7 +17,8 @@ sudo apt -y install snapd curl git
 # utilities
 sudo apt -y install pwgen rename tree sl silversearcher-ag adb tmux autokey-gtk #clamav exfat-fuse exfat-utils
 # key layout
-sudo apt -y install xcape uim-skk
+sudo apt -y install xcape # uim-skk
+sudo apt -y install language-selector-gnome fcitx5-mozc fcitx5-rime
 # editor
 # sudo apt -y install emacs ddskk vim
 
@@ -36,7 +37,7 @@ sudo apt -y install chromium-browser # w3m
 # keepass2
 # sudo apt -y install keepass2
 
-sudo apt -y install blender
+# sudo apt -y install blender
 sudo snap install youtube-dl
 
 # Signal
@@ -71,6 +72,10 @@ if ! type docker > /dev/null 2>&1;then
   sudo apt install ./dockerLatest.deb
   rm dockerLatest.deb
 fi
+
+# sudo ln -s /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+# sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
+# 中国語をインストール dbeaber vscode zoom
 
 # # #VAGRANT
 # # vagrant box add centos/7
