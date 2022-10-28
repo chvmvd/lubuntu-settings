@@ -4,7 +4,6 @@ clear mod4
 clear control
 clear shift
 
-keycode 9 =
 keycode 37 =
 keycode 50 = Zenkaku_Hankaku
 keycode 62 =
