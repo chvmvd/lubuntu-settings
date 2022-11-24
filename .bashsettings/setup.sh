@@ -40,15 +40,6 @@ sudo apt -y install chromium-browser # w3m
 # sudo apt -y install blender
 sudo snap install youtube-dl
 
-# Signal
-if ! type signal-desktop > /dev/null 2>&1;then
-  wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \
-  && cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null \
-  && echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  sudo tee -a /etc/apt/sources.list.d/signal-xenial.list \
-  && sudo apt update && sudo apt -y install signal-desktop
-fi
-
 # DVD Player
 if ! type brasero > /dev/null 2>&1;then
   sudo apt -y install brasero vlc \
