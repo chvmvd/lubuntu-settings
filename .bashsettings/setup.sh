@@ -72,7 +72,14 @@ fi
 sudo ln -s /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
 
-# 中国語をインストール dbeaber vscode zoom
+# Lazygit
+if ! type lazygit > /dev/null 2>&1;then
+  LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' |  sed -E 's/.*"v*([^"]+)".*/\1/')
+  curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+  sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
+fi
+
+# 中国語をインストール dbeaber vscode zoom simplescreenrecorder
 
 # # #VAGRANT
 # # vagrant box add centos/7
