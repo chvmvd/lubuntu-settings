@@ -69,8 +69,9 @@ if ! type docker > /dev/null 2>&1;then
   newgrp docker
 fi
 
-# sudo ln -s /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
-# sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
+sudo ln -s /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+sudo chmod +x /usr/share/doc/git/contrib/diff-highlight/diff-highlight
+
 # 中国語をインストール dbeaber vscode zoom
 
 # # #VAGRANT
