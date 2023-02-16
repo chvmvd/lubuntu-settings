@@ -1,2 +1,2 @@
-xmodmap /home/w/.bashsettings/.xmodmap_default
+xmodmap ~/.bashsettings/.xmodmap_default
 killall xcape
