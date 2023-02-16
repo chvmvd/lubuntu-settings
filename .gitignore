@@ -1,7 +1,8 @@
-# ignore all
+# Ignore All
 *
-# allowlist
+# Allow List
 !.bashrc
 !.gitignore
 !.bashsettings/
 !.bashsettings/*
+!romantable.txt
